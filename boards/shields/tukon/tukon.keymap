@@ -64,7 +64,7 @@
             zmk_layer {
                 label  = "ZMK config layer";
                 bindings = <
-                    &bt BT_CLR        &kp BT_PRV        &kp F        &kp BT_NXT        &kp BT_CLR            &kp J        &kp L           &kp UP        &kp Y           &kp SEMI   
+                    &bt BT_CLR   &bt BT_PRV   &kp F        &bt BT_NXT   &bt BT_CLR            &kp J        &kp L           &kp UP        &kp Y           &kp SEMI   
                     &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G            &kp M        &hm RSHIFT LEFT &hm RGUI DOWN &hm RALT RIGHT  &hm RCTRL O
                     &kp Z        &kp X        &kp C        &kp D        &kp V            &kp K        &kp H           &kp COMMA     &kp DOT         &kp FSLH
                                               &lt MAC ESC      &kp BSPC     &kp DEL          &kp RET      &kp SPACE    &kp TAB
