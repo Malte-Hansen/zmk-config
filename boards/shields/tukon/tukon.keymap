@@ -44,9 +44,9 @@
             num_layer {
                 label  = "numpad";
                 bindings = <
-                    &kp Q        &kp W        &kp F        &kp P        &kp B            &kp PLUS     &kp N7        &kp N8        &kp N9        &kp EQUAL   
-                    &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G            &kp N0       &hm RSHIFT N4 &hm RGUI N5   &hm RALT N6   &hm RCTRL COMMA
-                    &kp Z        &kp X        &kp C        &kp D        &kp V            &kp MINUS    &kp N1        &kp N2        &kp N3        &kp DOT
+                    &kp Q        &kp W        &kp F        &kp P        &kp B                &kp PLUS     &kp N7        &kp N8        &kp N9        &kp EQUAL   
+                    &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G                &kp N0       &hm RSHIFT N4 &hm RGUI N5   &hm RALT N6   &hm RCTRL COMMA
+                    &kp Z        &kp X        &kp C        &kp D        &kp V                &kp MINUS    &kp N1        &kp N2        &kp N3        &kp DOT
                                               &lt MAC ESC      &kp BSPC     &kp DEL          &kp RET      &kp SPACE     &kp TAB
                 >;
             };
@@ -54,9 +54,9 @@
             nav_layer {
                 label  = "navigation";
                 bindings = <
-                    &kp Q        &kp W        &kp F        &kp P        &kp B            &kp J        &kp L           &kp UP        &kp Y           &kp SEMI   
-                    &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G            &kp M        &hm RSHIFT LEFT &hm RGUI DOWN &hm RALT RIGHT  &hm RCTRL O
-                    &kp Z        &kp X        &kp C        &kp D        &kp V            &kp K        &kp H           &kp COMMA     &kp DOT         &kp FSLH
+                    &kp Q        &kp W        &kp F        &kp P        &kp B                &kp J        &kp L           &kp UP        &kp Y           &kp SEMI   
+                    &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G                &kp M        &hm RSHIFT LEFT &hm RGUI DOWN &hm RALT RIGHT  &hm RCTRL O
+                    &kp Z        &kp X        &kp C        &kp D        &kp V                &kp K        &kp H           &kp COMMA     &kp DOT         &kp FSLH
                                               &lt MAC ESC      &kp BSPC     &kp DEL          &kp RET      &kp SPACE    &kp TAB
                 >;
             };
@@ -65,9 +65,9 @@
                 label  = "ZMK config layer";
                 bindings = <
                     &bt BT_CLR   &bt BT_PRV   &kp F        &bt BT_NXT   &bt BT_CLR            &kp J        &kp L           &kp UP        &kp Y           &kp SEMI   
-                    &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G            &kp M        &hm RSHIFT LEFT &hm RGUI DOWN &hm RALT RIGHT  &hm RCTRL O
-                    &kp Z        &kp X        &kp C        &kp D        &kp V            &kp K        &kp H           &kp COMMA     &kp DOT         &kp FSLH
-                                              &lt MAC ESC      &kp BSPC     &kp DEL          &kp RET      &kp SPACE    &kp TAB
+                    &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G                 &kp M        &hm RSHIFT LEFT &hm RGUI DOWN &hm RALT RIGHT  &hm RCTRL O
+                    &kp Z        &kp X        &kp C        &kp D        &kp V                 &kp K        &kp H           &kp COMMA     &kp DOT         &kp FSLH
+                                              &lt MAC ESC  &kp BSPC     &kp DEL               &kp RET      &kp SPACE       &kp TAB
                 >;
             };
     };
