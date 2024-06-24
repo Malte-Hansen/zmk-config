@@ -1,12 +1,17 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+#define MAC 0
+#define SYM 1
+#define NUM 2
+#define NAV 3
+
 / {
     behaviors {
         hm: homerow_mods {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
-                tapping-term-ms = <150>;
+                tapping-term-ms = <200>;
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
@@ -16,11 +21,42 @@
     keymap {
             compatible = "zmk,keymap";
             default_layer {
+                label  = "mac";
                 bindings = <
                     &kp Q        &kp W        &kp F        &kp P        &kp B            &kp J        &kp L        &kp U        &kp Y        &kp SEMI   
                     &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G            &kp M        &hm RSHIFT N &hm RGUI E   &hm RALT I   &hm RCTRL O
                     &kp Z        &kp X        &kp C &kp D  &kp V        &kp K            &kp H        &kp COMMA    &kp DOT      &kp FSLH
-                                              &kp ESC      &kp BSPC     &kp DEL          &kp RET      &kp SPACE    &kp TAB
+                                              &kp ESC      &lt NAV BSPC     &kp DEL          &lt NUM RET  &lt SYM SPACE &kp TAB
+                >;
+            };
+
+            sym_layer {
+                label  = "symbols";
+                bindings = <
+                    &kp Q        &kp W        &kp F        &kp P        &kp AT            &kp J        &kp L        &kp U        &kp Y        &kp SEMI   
+                    &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G            &kp M        &hm RSHIFT LPAR &hm RGUI E   &hm RALT I   &hm RCTRL RPAR
+                    &kp Z        &kp X        &kp C &kp D  &kp V        &kp K            &kp H        &kp COMMA    &kp DOT      &kp FSLH
+                                              &lt MAC ESC      &kp BSPC     &kp DEL          &kp RET      &kp SPACE    &kp TAB
+                >;
+            };
+
+            num_layer {
+                label  = "numpad";
+                bindings = <
+                    &kp Q        &kp W        &kp F        &kp P        &kp B            &kp J        &kp N7        &kp N8        &kp N9        &kp SEMI   
+                    &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G            &kp N0       &hm RSHIFT N4 &hm RGUI N5   &hm RALT N6   &hm RCTRL O
+                    &kp Z        &kp X        &kp C &kp D  &kp V        &kp K            &kp H        &kp N1        &kp N2        &kp N3
+                                              &lt MAC ESC      &kp BSPC     &kp DEL          &kp RET      &kp SPACE     &kp TAB
+                >;
+            };
+
+            nav_layer {
+                label  = "navigation"
+                bindings = <
+                    &kp Q        &kp W        &kp F        &kp P        &kp B            &kp J        &kp L        &kp UP        &kp Y        &kp SEMI   
+                    &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G            &kp M        &hm RSHIFT LEFT &hm RGUI DOWN   &hm RALT RIGHT   &hm RCTRL O
+                    &kp Z        &kp X        &kp C &kp D  &kp V        &kp K            &kp H        &kp COMMA    &kp DOT      &kp FSLH
+                                              &lt MAC ESC      &kp BSPC     &kp DEL          &kp RET      &kp SPACE    &kp TAB
                 >;
             };
     };
