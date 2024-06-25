@@ -29,7 +29,7 @@ config TUKON_PM
 
 config TUKON_RGB_UNDERGLOW
     bool "Tukon per Key RGB LEDs"
-    default y
+    default n
     select ZMK_RGB_UNDERGLOW
     select WS2812_STRIP
     select SPI
