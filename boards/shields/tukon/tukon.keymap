@@ -29,7 +29,7 @@
                     &kp Q        &kp W        &kp F        &kp P        &kp B            &kp J        &kp L         &kp U        &kp Y        &kp SEMI   
                     &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G            &kp M        &hm RSHIFT N  &hm RGUI E   &hm RALT I   &hm RCTRL O
                     &kp Z        &kp X        &kp C        &kp D        &kp V            &kp K        &kp H         &kp COMMA    &kp DOT      &kp FSLH
-                                              &kp ESC      &lt NAV BSPC &kp DEL          &lt NUM RET  &lt SYM SPACE &lt FUN TAB
+                                              &kp ESC      &lt NAV BSPC &lt FUN DEL      &lt NUM RET  &lt SYM SPACE &kp TAB
                 >;
             };
 
@@ -56,9 +56,9 @@
             nav_layer {
                 label  = "navigation";
                 bindings = <
-                    &kp Q        &kp W        &kp F        &kp P        &kp B                &kp J        &kp L           &kp UP        &kp Y           &kp SEMI   
+                    &kp Q        &kp W        &kp F        &kp P        &kp B                &kp J        &kp HOME        &kp UP        &kp END         &kp SEMI   
                     &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G                &kp M        &hm RSHIFT LEFT &hm RGUI DOWN &hm RALT RIGHT  &hm RCTRL O
-                    &kp Z        &kp X        &kp C        &kp D        &kp V                &kp K        &kp H           &kp COMMA     &kp DOT         &kp FSLH
+                    &kp Z        &kp X        &kp C        &kp D        &kp V                &kp K        &kp PG_DN       &kp COMMA     &kp PG_UP       &kp FSLH
                                               &lt MAC ESC      &kp BSPC     &kp DEL          &kp RET      &kp SPACE    &kp TAB
                 >;
             };
@@ -66,10 +66,10 @@
             fun_layer {
                 label  = "function and config";
                 bindings = <
-                    &bt BT_CLR   &bt BT_PRV   &out OUT_TOG &bt BT_NXT   &bt BT_CLR            &kp F12        &kp F7           &kp F8        &kp F9           &kp SEMI   
-                    &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G                 &kp F11        &hm RSHIFT F4    &hm RGUI F5   &hm RALT F6  &hm RCTRL O
-                    &kp Z        &kp X        &kp C        &kp D        &kp V                 &kp F10        &kp F1           &kp F2        &kp F3         &kp FSLH
-                                              &lt MAC ESC  &kp BSPC     &kp DEL               &kp RET      &kp SPACE       &kp TAB
+                    &bt BT_CLR          &bt BT_PRV        &out OUT_TOG    &bt BT_NXT        &kp C_VOL_UP            &kp F12        &kp F7           &kp F8        &kp F9       &kp F15   
+                    &hm LCTRL C_BRI_UP  &hm LALT C_PREV   &hm LGUI C_PP   &hm LSHIFT C_NEXT &kp C_MUTE              &kp F11        &hm RSHIFT F4    &hm RGUI F5   &hm RALT F6  &hm RCTRL F14
+                    &kp C_BRI_DN        &kp X             &kp C           &kp D             &kp C_VOL_DN            &kp F10        &kp F1           &kp F2        &kp F3       &kp F13
+                                                          &lt MAC ESC     &kp BSPC          &kp DEL                 &kp RET      &kp SPACE       &kp TAB
                 >;
             };
     };
