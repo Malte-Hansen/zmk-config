@@ -8,7 +8,7 @@
 #define NUM 2
 #define NAV 3
 #define FUN 4
-#define WIN 5
+#define MGM 5
 
 / {
     behaviors {
@@ -25,17 +25,17 @@
     keymap {
             compatible = "zmk,keymap";
             default_layer {
-                label  = "mac";
+                display-name  = "mac";
                 bindings = <
                     &kp Q        &kp W        &kp F        &kp P        &kp B            &kp J        &kp L         &kp U        &kp Y        &kp SEMI   
                     &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G            &kp M        &hm RSHIFT N  &hm RGUI E   &hm RALT I   &hm RCTRL O
                     &kp Z        &kp X        &kp C        &kp D        &kp V            &kp K        &kp H         &kp COMMA    &kp DOT      &kp FSLH
-                                              &lt WIN ESC  &lt NAV BSPC &lt FUN DEL      &lt NUM RET  &lt SYM SPACE &kp TAB
+                                              &lt MGM ESC  &lt NAV BSPC &lt FUN DEL      &lt NUM RET  &lt SYM SPACE &kp TAB
                 >;
             };
 
             sym_layer {
-                label  = "symbols";
+                display-name  = "symbols";
                 bindings = <
                     &kp LBKT        &kp SQT        &kp DQT        &kp RBKT         &kp AT            &kp GRAVE        &kp EXCL        &kp AMPS        &kp PIPE        &kp SEMI   
                     &hm LCTRL CARET &hm LALT MINUS &hm LGUI PLUS  &hm LSHIFT EQUAL &kp STAR          &kp TILDE        &hm RSHIFT LPAR &hm RGUI LBRC   &hm RALT RBRC   &hm RCTRL RPAR
@@ -45,7 +45,7 @@
             };
 
             num_layer {
-                label  = "numpad";
+                display-name  = "numpad";
                 bindings = <
                     &kp Q        &kp W        &kp F        &kp P        &kp B                &kp PLUS     &kp N7        &kp N8        &kp N9        &kp EQUAL
                     &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G                &kp N0       &hm RSHIFT N4 &hm RGUI N5   &hm RALT N6   &hm RCTRL COMMA
@@ -55,7 +55,7 @@
             };
 
             nav_layer {
-                label  = "navigation";
+                display-name  = "navigation";
                 bindings = <
                     &kp Q        &kp W        &kp F        &kp P        &kp B                &kp J           &kp HOME        &kp UP        &kp END         &kp SEMI   
                     &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G                &kp LALT(LEFT)  &hm RSHIFT LEFT &hm RGUI DOWN &hm RALT RIGHT  &hm RCTRL LALT(RIGHT)
@@ -65,7 +65,7 @@
             };
 
             fun_layer {
-                label  = "function and config";
+                display-name  = "function and config";
                 bindings = <
                     &bt BT_CLR          &bt BT_PRV        &out OUT_TOG    &bt BT_NXT        &kp C_VOL_UP            &kp F12        &kp F7           &kp F8        &kp F9       &kp F15   
                     &hm LCTRL C_BRI_UP  &hm LALT C_PREV   &hm LGUI C_PP   &hm LSHIFT C_NEXT &kp C_MUTE              &kp F11        &hm RSHIFT F4    &hm RGUI F5   &hm RALT F6  &hm RCTRL F14
@@ -75,7 +75,7 @@
             };
 
             win_layer {
-                label  = "window";
+                display-name  = "window";
                 bindings = <
                     &kp Q        &kp W        &kp F        &kp P        &kp B                &kp PLUS     &kp LC(N7)        &kp LC(N8)        &kp LC(N9)        &kp EQUAL
                     &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G                &kp LC(N0)   &kp LC(N4)        &kp LC(N5)        &kp LC(N6)        &hm RCTRL COMMA
