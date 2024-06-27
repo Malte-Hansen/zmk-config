@@ -77,9 +77,9 @@
             win_layer {
                 display-name  = "window";
                 bindings = <
-                    &kp Q        &kp W              &kp LS(LG(LA(F)))        &kp P             &kp B                &kp PLUS         &hm LC(LA(N7)) LS(LG(LA(LC(7))))       &hm LC(LA(N8)) LS(LG(LA(LC(8))))  &hm LC(LA(N9)) LS(LG(LA(LC(9))))   &kp EQUAL
-                    &hm LCTRL A  &kp LS(LG(LA(R)))  &kp LS(LG(LA(S)))        &kp LS(LG(LA(T))) &kp G                &kp LC(LA(N0))   &hm LC(LA(N4)) LS(LG(LA(LC(4))))       &hm LC(LA(N5)) LS(LG(LA(LC(5))))  &hm LC(LA(N6)) LS(LG(LA(LC(6))))   &hm RCTRL COMMA
-                    &kp Z        &kp X              &kp LS(LG(LA(C)))        &kp D             &kp V                &kp MINUS        &hm LC(LA(N1)) LS(LG(LA(LC(1))))       &hm LC(LA(N2)) LS(LG(LA(LC(2))))  &hm LC(LA(N3)) LS(LG(LA(LC(3))))   &kp DOT
+                    &kp Q        &kp W              &kp LS(LG(LA(F)))        &kp P             &kp B                &kp PLUS         &hm LS(LG(LA(LC(7)))) LC(LA(N7))       &hm LS(LG(LA(LC(8)))) LC(LA(N8))  &hm LS(LG(LA(LC(9)))) LC(LA(N9))   &kp EQUAL
+                    &hm LCTRL A  &kp LS(LG(LA(R)))  &kp LS(LG(LA(S)))        &kp LS(LG(LA(T))) &kp G                &kp LC(LA(N0))   &hm LS(LG(LA(LC(4)))) LC(LA(N4))       &hm LS(LG(LA(LC(5)))) LC(LA(N5))  &hm LS(LG(LA(LC(6)))) LC(LA(N6))   &hm RCTRL COMMA
+                    &kp Z        &kp X              &kp LS(LG(LA(C)))        &kp D             &kp V                &kp MINUS        &hm LS(LG(LA(LC(1)))) LC(LA(N1))       &hm LS(LG(LA(LC(2)))) LC(LA(N2))  &hm LS(LG(LA(LC(3)))) LC(LA(N3))   &kp DOT
                                                     &lt MAC ESC              &kp BSPC          &kp DEL              &kp RET          &kp SPACE                              &kp TAB
                 >;
             };
