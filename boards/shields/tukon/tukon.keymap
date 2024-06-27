@@ -77,11 +77,11 @@
             win_layer {
                 display-name  = "window";
                 bindings = <
-                    &kp Q        &kp W              &kp LS(LG(LA(F)))        &kp P             &kp B                &kp PLUS         &hm LS(LG(LA(LC(7)))) LC(LA(N7))       &hm LS(LG(LA(LC(8)))) LC(LA(N8))  &hm LS(LG(LA(LC(9)))) LC(LA(N9))   &kp EQUAL
-                    &hm LCTRL A  &kp LS(LG(LA(R)))  &kp LS(LG(LA(S)))        &kp LS(LG(LA(T))) &kp G                &kp LC(LA(N0))   &hm LS(LG(LA(LC(4)))) LC(LA(N4))       &hm LS(LG(LA(LC(5)))) LC(LA(N5))  &hm LS(LG(LA(LC(6)))) LC(LA(N6))   &hm RCTRL COMMA
-                    &kp Z        &kp X              &kp LS(LG(LA(C)))        &kp D             &kp V                &kp MINUS        &hm LS(LG(LA(LC(1)))) LC(LA(N1))       &hm LS(LG(LA(LC(2)))) LC(LA(N2))  &hm LS(LG(LA(LC(3)))) LC(LA(N3))   &kp DOT
-                                                    &lt MAC ESC              &kp BSPC          &kp DEL              &kp RET          &kp SPACE                              &kp TAB
+                    &kp Q        &kp LS(LG(LA(W)))  &kp LS(LG(LA(F)))        &kp &kp LS(LG(LA(P))) &kp B                &kp PLUS              &mt LS(LG(LA(LC(7)))) LC(LA(N7))  &mt LS(LG(LA(LC(8)))) LC(LA(N8))  &mt LS(LG(LA(LC(9)))) LC(LA(N9))   &kp EQUAL
+                    &hm LCTRL A  &kp LS(LG(LA(R)))  &kp LS(LG(LA(S)))        &kp LS(LG(LA(T)))     &kp G                &kp LS(LG(LA(LC(M)))) &mt LS(LG(LA(LC(4)))) LC(LA(N4))  &mt LS(LG(LA(LC(5)))) LC(LA(N5))  &mt LS(LG(LA(LC(6)))) LC(LA(N6))   &kp LS(LG(LA(LC(O))))
+                    &kp Z        &kp X              &kp LS(LG(LA(C)))        &kp D                 &kp V                &kp MINUS             &mt LS(LG(LA(LC(1)))) LC(LA(N1))  &mt LS(LG(LA(LC(2)))) LC(LA(N2))  &mt LS(LG(LA(LC(3)))) LC(LA(N3))   &kp DOT
+                                                    &lt MAC ESC              &kp BSPC              &kp DEL              &kp RET               &kp SPACE                         &kp TAB
                 >;
             };
     };
-};
+}
