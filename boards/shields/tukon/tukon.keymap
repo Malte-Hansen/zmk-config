@@ -27,7 +27,7 @@
             default_layer {
                 display-name  = "mac";
                 bindings = <
-                    &kp Q        &kp W        &kp F        &kp P        &kp B            &kp J        &kp L         &kp U        &kp Y        &kp SEMI   
+                    &kp Q        &kp W        &kp F        &kp P        &kp B            &kp J        &kp L         &kp U        &kp Y        &kp BACKSLASH   
                     &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G            &kp M        &hm RSHIFT N  &hm RGUI E   &hm RALT I   &hm RCTRL O
                     &kp Z        &kp X        &kp C        &kp D        &kp V            &kp K        &kp H         &kp COMMA    &kp DOT      &kp FSLH
                                               &lt MGM ESC  &lt NAV BSPC &lt FUN DEL      &lt NUM RET  &lt SYM SPACE &kp TAB
@@ -37,7 +37,7 @@
             sym_layer {
                 display-name  = "symbols";
                 bindings = <
-                    &kp LBKT        &kp SQT        &kp DQT        &kp RBKT         &kp AT            &kp GRAVE        &kp EXCL        &kp AMPS        &kp PIPE        &kp SEMI   
+                    &kp LBKT        &kp SQT        &kp DQT        &kp RBKT         &kp AT            &kp GRAVE        &kp EXCL        &kp AMPS        &kp PIPE        &kp BACKSLASH   
                     &hm LCTRL CARET &hm LALT MINUS &hm LGUI PLUS  &hm LSHIFT EQUAL &kp STAR          &kp TILDE        &hm RSHIFT LPAR &hm RGUI LBRC   &hm RALT RBRC   &hm RCTRL RPAR
                     &kp Z           &kp UNDER      &kp PRCNT      &kp DLLR         &kp DLLR          &kp K            &kp HASH        &kp COLON       &kp SEMI        &kp FSLH
                                                    &lt MAC ESC    &kp BSPC         &kp DEL           &kp RET          &kp SPACE       &kp TAB
