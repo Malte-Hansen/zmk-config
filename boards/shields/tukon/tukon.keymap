@@ -20,6 +20,14 @@
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
         };
+        hms: homerow_mods {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                tapping-term-ms = <150>;
+                quick-tap-ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
@@ -27,10 +35,10 @@
             default_layer {
                 display-name  = "mac";
                 bindings = <
-                    &kp Q        &kp W        &kp F        &kp P        &kp B            &kp J        &kp L         &kp U        &kp Y        &kp BACKSLASH   
-                    &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G            &kp M        &hm RSHIFT N  &hm RGUI E   &hm RALT I   &hm RCTRL O
-                    &kp Z        &kp X        &kp C        &kp D        &kp V            &kp K        &kp H         &kp COMMA    &kp DOT      &kp FSLH
-                                              &lt MGM ESC  &lt NAV BSPC &lt FUN TAB      &lt NUM RET  &lt SYM SPACE &kp DEL
+                    &kp Q        &kp W        &kp F        &kp P         &kp B            &kp J        &kp L         &kp U        &kp Y        &kp BACKSLASH   
+                    &hm LCTRL A  &hm LALT R   &hm LGUI S   &hms LSHIFT T &kp G            &kp M        &hms RSHIFT N  &hm RGUI E   &hm RALT I   &hm RCTRL O
+                    &kp Z        &kp X        &kp C        &kp D         &kp V            &kp K        &kp H         &kp COMMA    &kp DOT      &kp FSLH
+                                              &lt MGM ESC  &lt NAV BSPC  &lt FUN TAB      &lt NUM RET  &lt SYM SPACE &kp DEL
                 >;
             };
 
