@@ -55,10 +55,10 @@
             num_layer {
                 display-name  = "numpad";
                 bindings = <
-                    &kp Q        &kp W        &kp F        &kp P        &kp B                &kp PLUS     &kp N7        &kp N8        &kp N9        &kp EQUAL
-                    &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G                &kp N0       &hm RSHIFT N4 &hm RGUI N5   &hm RALT N6   &hm RCTRL COMMA
-                    &kp Z        &kp X        &kp C        &kp D        &kp V                &kp MINUS    &kp N1        &kp N2        &kp N3        &kp DOT
-                                              &lt MAC ESC  &kp BSPC     &kp TAB              &kp RET      &kp SPACE     &kp DEL
+                    &kp Q        &kp W         &kp UP        &kp P            &kp B                &kp PLUS     &kp N7        &kp N8        &kp N9        &kp EQUAL
+                    &hm LCTRL A  &hm LALT LEFT &hm LGUI DOWN &hm LSHIFT RIGHT &kp G                &kp N0       &hm RSHIFT N4 &hm RGUI N5   &hm RALT N6   &hm RCTRL COMMA
+                    &kp Z        &kp X         &kp C         &kp D            &kp V                &kp MINUS    &kp N1        &kp N2        &kp N3        &kp DOT
+                                               &lt MAC ESC   &kp BSPC         &kp TAB              &kp RET      &kp N0        &kp DEL
                 >;
             };
 
