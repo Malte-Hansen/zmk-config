@@ -35,10 +35,10 @@
             default_layer {
                 display-name  = "mac";
                 bindings = <
-                    &kp Q        &kp W        &kp F        &kp P         &kp B            &kp J        &kp L         &kp U        &kp Y        &kp BACKSLASH   
+                    &kp Q        &kp W        &kp F        &kp P         &kp B            &kp J        &kp L          &kp U        &kp Y        &kp BACKSLASH   
                     &hm LCTRL A  &hm LALT R   &hm LGUI S   &hms LSHIFT T &kp G            &kp M        &hms RSHIFT N  &hm LGUI E   &hm RALT I   &hm RCTRL O
-                    &kp Z        &kp X        &kp C        &kp D         &kp V            &kp K        &kp H         &kp COMMA    &kp DOT      &kp FSLH
-                                              &lt MGM ESC  &lt NUM BSPC  &lt FUN TAB      &lt NAV RET  &lt SYM SPACE &lt RGUI DEL
+                    &kp Z        &kp X        &kp C        &hms RGUI D   &kp V            &kp K        &hms RGUI H    &kp COMMA    &kp DOT      &kp FSLH
+                                              &lt MGM ESC  &lt NUM BSPC  &lt FUN TAB      &lt NAV RET  &lt SYM SPACE &hms RGUI DEL
                 >;
             };
 
@@ -48,7 +48,7 @@
                     &kp LBKT        &kp SQT        &kp DQT        &kp RBKT         &kp AT            &kp GRAVE        &kp EXCL        &kp AMPS        &kp PIPE        &kp BACKSLASH   
                     &hm LCTRL CARET &hm LALT MINUS &hm LGUI PLUS  &hm LSHIFT EQUAL &kp STAR          &kp TILDE        &hm RSHIFT LPAR &hm LGUI LBRC   &hm RALT RBRC   &hm RCTRL RPAR
                     &kp Z           &kp UNDER      &kp PRCNT      &kp DLLR         &kp DLLR          &kp BACKSLASH    &kp HASH        &kp COLON       &kp SEMI        &kp FSLH
-                                                   &lt MAC ESC    &kp BSPC         &kp TAB           &kp RET          &kp SPACE       &lt RGUI DEL
+                                                   &lt MAC ESC    &kp BSPC         &kp TAB           &kp RET          &kp SPACE       &hms RGUI DEL
                 >;
             };  
 
@@ -58,7 +58,7 @@
                     &kp Q        &kp W         &kp UP        &kp P            &kp B                &kp PLUS     &kp N7        &kp N8        &kp N9        &kp EQUAL
                     &hm LCTRL A  &hm LALT LEFT &hm LGUI DOWN &hm LSHIFT RIGHT &kp G                &kp N0       &hm RSHIFT N4 &hm LGUI N5   &hm RALT N6   &hm RCTRL COMMA
                     &kp Z        &kp X         &kp C         &kp D            &kp V                &kp MINUS    &kp N1        &kp N2        &kp N3        &kp DOT
-                                               &lt MAC ESC   &kp BSPC         &kp TAB              &kp RET      &kp N0        &lt RGUI DEL
+                                               &lt MAC ESC   &kp BSPC         &kp TAB              &kp RET      &kp N0        &hms RGUI DEL
                 >;
             };
 
@@ -68,7 +68,7 @@
                     &kp Q        &kp W        &kp F        &kp P        &kp B                &kp J           &kp PG_UP       &kp UP        &kp PG_DN       &kp SEMI   
                     &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G                &kp LA(LEFT)    &hm RSHIFT LEFT &hm LGUI DOWN &hm RALT RIGHT  &hm RCTRL LA(RIGHT)
                     &kp Z        &kp X        &kp C        &kp D        &kp V                &kp K           &kp HOME        &kp COMMA     &kp END       &kp FSLH
-                                              &lt MAC ESC  &kp BSPC     &kp TAB              &kp RET         &kp SPACE       &lt RGUI DEL
+                                              &lt MAC ESC  &kp BSPC     &kp TAB              &kp RET         &kp SPACE       &hms RGUI DEL
                 >;
             };
 
@@ -77,8 +77,8 @@
                 bindings = <
                     &bt BT_CLR          &bt BT_PRV        &out OUT_TOG    &bt BT_NXT        &kp C_VOL_UP            &kp F12        &kp F7           &kp F8        &kp F9       &kp F15   
                     &hm LCTRL C_BRI_UP  &hm LALT C_PREV   &hm LGUI C_PP   &hm LSHIFT C_NEXT &kp C_MUTE              &kp F11        &hm RSHIFT F4    &hm LGUI F5   &hm RALT F6  &hm RCTRL F14
-                    &kp C_BRI_DN        &kp X             &kp C           &kp D             &kp C_VOL_DN            &kp F10        &kp F1           &kp F2        &kp F3       &kp F13
-                                                          &lt MAC ESC     &kp BSPC          &kp TAB                 &kp RET      &kp SPACE       &lt RGUI DEL
+                    &kp C_BRI_DN        &kp CAPS          &kp C           &kp D             &kp C_VOL_DN            &kp F10        &kp F1           &kp F2        &kp F3       &kp F13
+                                                          &lt MAC ESC     &kp BSPC          &kp TAB                 &kp RET        &kp SPACE        &hms RGUI DEL
                 >;
             };
 
@@ -88,7 +88,7 @@
                     &kp Q        &kp LS(LG(LA(W)))  &kp LS(LG(LA(F)))        &kp LS(LG(LA(P)))     &kp B                &kp PLUS              &mt LS(LG(LA(LC(7)))) LC(LA(N7))  &mt LS(LG(LA(LC(8)))) LC(LA(N8))  &mt LS(LG(LA(LC(9)))) LC(LA(N9))   &kp EQUAL
                     &hm LCTRL A  &kp LS(LG(LA(R)))  &kp LS(LG(LA(S)))        &kp LS(LG(LA(T)))     &kp G                &kp LS(LG(LA(LC(M)))) &mt LS(LG(LA(LC(4)))) LC(LA(N4))  &mt LS(LG(LA(LC(5)))) LC(LA(N5))  &mt LS(LG(LA(LC(6)))) LC(LA(N6))   &kp LS(LG(LA(LC(O))))
                     &kp Z        &kp X              &kp LS(LG(LA(C)))        &kp D                 &kp V                &kp MINUS             &mt LS(LG(LA(LC(1)))) LC(LA(N1))  &mt LS(LG(LA(LC(2)))) LC(LA(N2))  &mt LS(LG(LA(LC(3)))) LC(LA(N3))   &kp DOT
-                                                    &lt MAC ESC              &kp BSPC              &kp TAB              &kp RET               &kp SPACE                         &lt RGUI DEL
+                                                    &lt MAC ESC              &kp BSPC              &kp TAB              &kp RET               &kp SPACE                         &hms RGUI DEL
                 >;
             };
     };
