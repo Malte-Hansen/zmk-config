@@ -37,9 +37,9 @@
             sym_layer {
                 display-name  = "symbols";
                 bindings = <
-                    &kp GRAVE       &kp SQT        &kp DQT        &kp CARET        &kp HASH          &kp GRAVE        &kp EXCL        &kp AMPS        &kp PIPE        &kp BACKSLASH   
+                    &kp GRAVE       &kp SQT        &kp DQT        &kp CARET        &kp LT            &kp GT           &kp EXCL        &kp AMPS        &kp PIPE        &kp QMARK   
                     &hm LCTRL AT    &hm LALT MINUS &hm LGUI PLUS  &hm LSHIFT EQUAL &kp STAR          &kp TILDE        &hm RSHIFT LPAR &hm LGUI LBRC   &hm RALT RBRC   &hm RCTRL RPAR
-                    &kp FSLH        &kp UNDER      &kp PRCNT      &kp DLLR         &kp FSLH          &kp BACKSLASH    &kp LBKT        &kp COLON       &kp SEMI        &kp RBKT
+                    &kp FSLH        &kp UNDER      &kp PRCNT      &kp DLLR         &kp HASH          &kp BACKSLASH    &kp LBKT        &kp COLON       &kp SEMI        &kp RBKT
                                                    &lt MAC ESC    &kp BSPC         &kp TAB           &kp RET          &kp SPACE       &hm RGUI DEL
                 >;
             };  
