@@ -37,50 +37,75 @@
             default_layer {
                 display-name  = "mac";
                 bindings = <
-                    &kp Q        &kp W        &kp F        &kp P         &kp B            &kp J        &kp L         &kp U        &kp Y        &kp BACKSLASH   
-                    &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T  &kp G            &kp M        &hm RSHIFT N  &hm LGUI E   &hm RALT I   &hm RCTRL O
-                    &kp Z        &kp X        &kp C        &hm RGUI D    &kp V            &kp K        &hm RGUI H    &kp COMMA    &kp DOT      &kp FSLH
-                                              &lt MGM ESC  &lt NUM BSPC  &lt FUN TAB      &lt NAV RET  &lt SYM SPACE &hm RGUI DEL
+                // ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮ ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+                          &kp Q        &kp W           &kp F        &kp P            &kp B            &kp J          &kp L          &kp U          &kp Y      &kp BACKSLASH  
+                // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤ ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+                      &hm LCTRL A    &hm LALT R      &hm LGUI S   &hm LSHIFT T       &kp G            &kp M      &hm RSHIFT N     &hm LGUI E     &hm RALT I    &hm RCTRL O
+                // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤ ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+                         &kp Z         &kp X           &kp C       &hm RGUI D       &kp V             &kp K       &hm RGUI H     &kp COMMA       &kp DOT       &kp FSLH
+                // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤ ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+                                                    &lt MGM ESC   &lt NUM BSPC    &lt FUN TAB      &lt NAV RET   &lt SYM SPACE   &hm RGUI DEL
+                //                               ╰──────────────┴──────────────┴──────────────╯ ╰──────────────┴──────────────┴──────────────╯
                 >;
             };
 
             sym_layer {
                 display-name  = "symbols";
                 bindings = <
-                    &kp GRAVE       &kp SQT        &kp DQT        &kp CARET        &kp LT            &kp GT           &kp EXCL        &kp AMPS        &kp PIPE        &kp QMARK   
-                    &hm LCTRL AT    &hm LALT MINUS &hm LGUI PLUS  &hm LSHIFT EQUAL &kp STAR          &kp TILDE        &hm RSHIFT LPAR &hm LGUI LBRC   &hm RALT RBRC   &hm RCTRL RPAR
-                    &kp FSLH        &kp UNDER      &kp PRCNT      &kp DLLR         &kp HASH          &kp BACKSLASH    &kp LBKT        &kp COLON       &kp SEMI        &kp RBKT
-                                                   &lt MAC ESC    &kp BSPC         &kp TAB           &kp RET          &kp SPACE       &hm RGUI DEL
+                // ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮ ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+                       &kp GRAVE      &kp SQT        &kp DQT        &kp CARET      &kp LT            &kp GT        &kp EXCL        &kp AMPS       &kp PIPE      &kp QMARK   
+                // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤ ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+                    &hm LCTRL AT   &hm LALT MINUS  &hm LGUI PLUS &hm LSHIFT EQUAL  &kp STAR         &kp TILDE   &hm RSHIFT LPAR &hm LGUI LBRC &hm RALT RBRC   &hm RCTRL RPAR
+                // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤ ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+                    &kp FSLH        &kp UNDER      &kp PRCNT      &kp DLLR         &kp HASH       &kp BACKSLASH     &kp LBKT        &kp COLON       &kp SEMI    &kp RBKT
+                // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤ ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+                                                   &lt MAC ESC     &kp BSPC        &kp TAB           &kp RET       &kp SPACE    &hm RGUI DEL
+                //                               ╰──────────────┴──────────────┴──────────────╯ ╰──────────────┴──────────────┴──────────────╯
                 >;
             };  
 
             num_layer {
                 display-name  = "numpad";
                 bindings = <
+                // ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮ ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
                     &kp Q        &kp W         &kp UP        &kp P            &kp B                &kp PLUS     &kp N7        &kp N8        &kp N9        &kp EQUAL
+                // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤ ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
                     &hm LCTRL A  &hm LALT LEFT &hm LGUI DOWN &hm LSHIFT RIGHT &kp G                &kp N0       &hm RSHIFT N4 &hm LGUI N5   &hm RALT N6   &hm RCTRL COMMA
+                // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤ ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
                     &kp Z        &kp X         &kp C         &kp D            &kp V                &kp MINUS    &kp N1        &kp N2        &kp N3        &kp DOT
+                // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤ ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
                                                &lt MAC ESC   &kp BSPC         &kp TAB              &kp RET      &kp N0        &hm RGUI DEL
+                //                               ╰──────────────┴──────────────┴──────────────╯ ╰──────────────┴──────────────┴──────────────╯
                 >;
             };
 
             nav_layer {
                 display-name  = "navigation";
                 bindings = <
-                    &kp Q        &kp W        &kp F        &kp P        &kp B                &kp J           &kp PG_UP       &kp UP        &kp PG_DN       &kp SEMI   
-                    &hm LCTRL A  &hm LALT R   &hm LGUI S   &hm LSHIFT T &kp G                &kp LA(LEFT)    &hm RSHIFT LEFT &hm LGUI DOWN &hm RALT RIGHT  &hm RCTRL LA(RIGHT)
-                    &kp Z        &kp X        &kp C        &kp D        &kp V                &kp K           &kp HOME        &kp COMMA     &kp END         &kp FSLH
-                                              &lt MAC ESC  &kp BSPC     &kp TAB              &kp RET         &kp SPACE       &hm RGUI DEL
+                // ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮ ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+                         &kp Q        &kp W          &kp F        &kp P             &kp B             &kp J           &kp PG_UP       &kp UP        &kp PG_DN       &kp SEMI   
+                // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤ ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+                    &hm LCTRL A       &hm LALT R      &hm LGUI S   &hm LSHIFT T     &kp G        &kp LA(LEFT)    &hm RSHIFT LEFT &hm LGUI DOWN &hm RALT RIGHT  &hm RCTRL LA(RIGHT)
+                // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤ ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+                        &kp Z           &kp X        &kp C        &kp D        &kp V               &kp K           &kp HOME        &kp COMMA     &kp END         &kp FSLH
+                // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤ ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+                                                    &lt MAC ESC  &kp BSPC     &kp TAB              &kp RET         &kp SPACE       &hm RGUI DEL
+                //                               ╰──────────────┴──────────────┴──────────────╯ ╰──────────────┴──────────────┴──────────────╯
                 >;
             };
 
             fun_layer {
                 display-name  = "function and config";
                 bindings = <
-                    &bt BT_CLR          &bt BT_PRV        &out OUT_TOG    &bt BT_NXT        &kp C_VOL_UP            &kp F12        &kp F7           &kp F8        &kp F9       &kp F15   
-                    &hm LCTRL C_BRI_UP  &hm LALT C_PREV   &hm LGUI C_PP   &hm LSHIFT C_NEXT &kp C_MUTE              &kp F11        &hm RSHIFT F4    &hm LGUI F5   &hm RALT F6  &hm RCTRL F14
-                    &kp C_BRI_DN        &kp CAPS          &kp C           &kp D             &kp C_VOL_DN            &kp F10        &kp F1           &kp F2        &kp F3       &kp F13
-                                                          &lt MAC ESC     &kp BSPC          &kp TAB                 &kp RET        &kp SPACE        &hm RGUI DEL
+                // ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮ ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+                    &bt BT_CLR     &bt BT_PRV       &out OUT_TOG    &bt BT_NXT     &kp C_VOL_UP   &kp F12        &kp F7           &kp F8        &kp F9       &kp F15   
+                // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤ ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+                &hm LCTRL C_BRI_UP &hm LALT C_PREV  &hm LGUI C_PP &hm LSHIFT C_NEXT &kp C_MUTE &kp F11          &hm RSHIFT F4 &hm LGUI F5      &hm RALT F6     &hm RCTRL F14
+                // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤ ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+                    &kp C_BRI_DN        &kp CAPS          &kp C           &kp D   &kp C_VOL_DN        &kp F10        &kp F1           &kp F2        &kp F3       &kp F13
+                // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤ ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+                                                    &lt MAC ESC     &kp BSPC          &kp TAB      &kp RET        &kp SPACE        &hm RGUI DEL
+                //                               ╰──────────────┴──────────────┴──────────────╯ ╰──────────────┴──────────────┴──────────────╯
                 >;
             };
 
